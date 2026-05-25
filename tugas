@@ -542,45 +542,6 @@
       box-shadow: 0 38px 110px rgba(0, 0, 0, 0.58), 0 0 50px rgba(243, 215, 139, 0.14);
     }
 
-    .achievement-image-wrap {
-      position: relative;
-      height: 235px;
-      overflow: hidden;
-      border-bottom: 1px solid rgba(243, 215, 139, 0.18);
-      background:
-        radial-gradient(circle at 30% 20%, rgba(243, 215, 139, 0.28), transparent 26%),
-        linear-gradient(145deg, rgba(143, 29, 69, 0.55), rgba(42, 16, 45, 0.94));
-    }
-
-    .achievement-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      opacity: 0.96;
-      transition: 0.4s ease;
-    }
-
-    .achievement-card:hover .achievement-image {
-      transform: scale(1.07);
-    }
-
-    .achievement-badge {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(243, 215, 139, 0.26);
-      background: rgba(7, 5, 8, 0.55);
-      backdrop-filter: blur(12px);
-      color: var(--pale-gold);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
     .achievement-content {
       padding: 24px;
     }
@@ -908,7 +869,7 @@
 
             <div class="about-stats">
               <div class="stat">
-                <div class="number" id="achievementCount">0</div>
+                <div class="number" id="achievementCount">17</div>
                 <div class="label">Achievements</div>
               </div>
 
@@ -959,10 +920,6 @@
 
         <div class="achievements-grid" id="achievementsGrid">
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-1.jpg" alt="Asia Youth International Model United Nations 18th" class="achievement-image">
-              <span class="achievement-badge">29 Aug–1 Sept 2025</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">International • WHO Junior Council</p>
@@ -979,10 +936,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-2.jpg" alt="Kompetisi Riset dan Inovasi Siswa Indonesia (KREASI) 2025" class="achievement-image">
-              <span class="achievement-badge">2025</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • MSTL</p>
@@ -999,10 +952,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-3.jpg" alt="Kids Hackathon 2025" class="achievement-image">
-              <span class="achievement-badge">2025</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • AI &amp; Robotic Competition</p>
@@ -1019,10 +968,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-4.jpg" alt="Nizamia Model United Nations" class="achievement-image">
-              <span class="achievement-badge">2025</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • WHO Council</p>
@@ -1039,10 +984,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-5.jpg" alt="Global Millennial Model United Nations Jogjakarta" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • WHO Council</p>
@@ -1059,10 +1000,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-6.jpg" alt="Global Islamic School 2 Model United Nations" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • ILO Council</p>
@@ -1079,10 +1016,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-7.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • City Selection</p>
@@ -1099,10 +1032,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-8.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • City Selection</p>
@@ -1119,10 +1048,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-9.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • Provincial Selection</p>
@@ -1139,10 +1064,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-10.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • Provincial Selection</p>
@@ -1159,10 +1080,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-11.jpg" alt="Olimpiade Penelitian Siswa Indonesia (OPSI) 2026" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • Applied Physics &amp; Engineering</p>
@@ -1179,10 +1096,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-12.jpg" alt="STEMCO Math Competition" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • Secondary Middle</p>
@@ -1199,10 +1112,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-13.jpg" alt="Labschool Jakarta Model United Nations" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • UNHRC Council</p>
@@ -1219,10 +1128,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-14.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • National Final</p>
@@ -1239,10 +1144,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-15.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">National • National Final</p>
@@ -1259,10 +1160,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-16.jpg" alt="STEMCO Math Competition Global Round" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">International • NUS Singapore</p>
@@ -1279,10 +1176,6 @@
           </article>
 
           <article class="achievement-card lux-card">
-            <div class="achievement-image-wrap">
-              <img src="achievement-17.jpg" alt="ASEAN Students Science Project Competition (ASPC) 2026" class="achievement-image">
-              <span class="achievement-badge">2026</span>
-            </div>
 
             <div class="achievement-content">
               <p class="achievement-kicker">International • Applied Science Research</p>
