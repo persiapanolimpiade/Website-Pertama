@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syakira Reynamahira | Portfolio</title>
+
+  <!--
+    REYNA'S LUXURY PORTFOLIO WEBSITE
+
+    IMAGE GUIDE:
+    Put your images in the same folder as this file.
+    Use these names:
+    profile.jpg
+    achievement-1.jpg
+    achievement-2.jpg
+    ...
+    achievement-17.jpg
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #070508;
+      --deep-plum: #130817;
+      --royal-plum: #2a102d;
+      --ruby: #8f1d45;
+      --rose: #e7a6b8;
+      --blush: #ffd7df;
+      --gold: #f3d78b;
+      --pale-gold: #fff1bc;
+      --emerald: #5fc7a5;
+      --sapphire: #6ea8ff;
+      --cream: #fff8ee;
+      --muted: rgba(255, 248, 238, 0.72);
+      --soft: rgba(255, 248, 238, 0.45);
+      --border: rgba(243, 215, 139, 0.24);
+      --card: rgba(255, 248, 238, 0.075);
+      --card-strong: rgba(255, 248, 238, 0.12);
+      --shadow: 0 34px 100px rgba(0, 0, 0, 0.55);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Inter", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: var(--sans);
+      color: var(--cream);
+      line-height: 1.7;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 10% 8%, rgba(143, 29, 69, 0.48), transparent 30%),
+        radial-gradient(circle at 88% 10%, rgba(95, 199, 165, 0.17), transparent 24%),
+        radial-gradient(circle at 75% 48%, rgba(110, 168, 255, 0.12), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(243, 215, 139, 0.16), transparent 38%),
+        linear-gradient(145deg, var(--black), var(--deep-plum) 48%, #050305);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 62px 62px;
+      mask-image: radial-gradient(circle at center, black 35%, transparent 82%);
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(243, 215, 139, 0.035), transparent 18%, transparent 82%, rgba(243, 215, 139, 0.035)),
+        radial-gradient(circle at center, transparent 45%, rgba(0,0,0,0.32));
+      z-index: -1;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .lux-card {
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255, 248, 238, 0.11), rgba(255, 248, 238, 0.035)),
+        linear-gradient(135deg, rgba(243, 215, 139, 0.05), rgba(231, 166, 184, 0.035));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--pale-gold);
+      background: rgba(255, 255, 255, 0.055);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      box-shadow: 0 0 35px rgba(243, 215, 139, 0.17);
+    }
+
+    .sparkle {
+      color: var(--gold);
+      filter: drop-shadow(0 0 12px rgba(243, 215, 139, 0.8));
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 16px 0;
+      background: rgba(7, 5, 8, 0.72);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(243, 215, 139, 0.15);
+    }
+
+    .nav-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--pale-gold);
+      font-family: var(--serif);
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #16070d;
+      background:
+        radial-gradient(circle at 35% 25%, #fff8d8, transparent 24%),
+        linear-gradient(135deg, var(--pale-gold), var(--gold), var(--rose), var(--ruby));
+      box-shadow: 0 0 32px rgba(243, 215, 139, 0.38);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 8px;
+      padding: 6px;
+      border: 1px solid rgba(243, 215, 139, 0.17);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.045);
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #17080f;
+      background: linear-gradient(135deg, var(--pale-gold), var(--gold), var(--rose));
+      box-shadow: 0 10px 30px rgba(243, 215, 139, 0.24);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--cream);
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 64px;
+      padding: 94px 0 74px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "PORTFOLIO";
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--serif);
+      font-size: clamp(80px, 15vw, 215px);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(255, 248, 238, 0.035);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      margin-top: 24px;
+      font-family: var(--serif);
+      font-size: clamp(64px, 8vw, 122px);
+      line-height: 0.88;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      display: block;
+      background: linear-gradient(110deg, var(--cream), var(--pale-gold), var(--rose), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 24px rgba(243, 215, 139, 0.13));
+    }
+
+    .subtitle {
+      margin-top: 24px;
+      color: var(--pale-gold);
+      font-size: clamp(18px, 2vw, 23px);
+      font-weight: 600;
+      max-width: 670px;
+    }
+
+    .hero-description {
+      margin-top: 16px;
+      color: var(--muted);
+      max-width: 670px;
+      font-size: 16px;
+    }
+
+    .hero-note {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .note-pill {
+      padding: 10px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(243, 215, 139, 0.18);
+      background: rgba(255, 255, 255, 0.055);
+      color: var(--pale-gold);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .profile-stage {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      place-items: center;
+    }
+
+    .profile-frame {
+      position: relative;
+      width: min(410px, 86vw);
+      aspect-ratio: 0.78;
+      padding: 18px;
+      border-radius: 48% 48% 34px 34px;
+      border: 1px solid rgba(243, 215, 139, 0.32);
+      background:
+        linear-gradient(135deg, rgba(255, 241, 188, 0.24), rgba(231, 166, 184, 0.09)),
+        rgba(255, 255, 255, 0.05);
+      box-shadow: var(--shadow), 0 0 80px rgba(243, 215, 139, 0.13);
+      overflow: hidden;
+    }
+
+    .profile-frame::before {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border: 1px solid rgba(255, 241, 188, 0.26);
+      border-radius: 48% 48% 24px 24px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 46% 46% 24px 24px;
+      background:
+        radial-gradient(circle at 35% 20%, rgba(255, 241, 188, 0.38), transparent 24%),
+        linear-gradient(145deg, rgba(143, 29, 69, 0.72), rgba(42, 16, 45, 0.94));
+      display: block;
+    }
+
+    .profile-label {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      bottom: 34px;
+      z-index: 4;
+      padding: 18px 20px;
+      border-radius: 24px;
+      border: 1px solid rgba(243, 215, 139, 0.24);
+      background: rgba(7, 5, 8, 0.52);
+      backdrop-filter: blur(18px);
+    }
+
+    .profile-label h3 {
+      font-family: var(--serif);
+      font-size: 32px;
+      line-height: 1;
+      color: var(--pale-gold);
+    }
+
+    .profile-label p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .floating-gem {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(243, 215, 139, 0.25);
+      background: rgba(255, 255, 255, 0.075);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      animation: float 5.5s ease-in-out infinite;
+      z-index: 5;
+    }
+
+    .gem-1 {
+      width: 94px;
+      height: 94px;
+      border-radius: 30px;
+      top: 40px;
+      right: 8px;
+      font-size: 34px;
+    }
+
+    .gem-2 {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      left: 8px;
+      bottom: 118px;
+      font-size: 30px;
+      animation-delay: -1.4s;
+    }
+
+    .gem-3 {
+      width: 122px;
+      height: 54px;
+      border-radius: 999px;
+      right: -6px;
+      bottom: 46px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      animation-delay: -2.4s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-18px) rotate(3deg);
+      }
+    }
+
+    section:not(.hero) {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 38px;
+    }
+
+    .section-title h2,
+    .contact-content h2 {
+      margin-top: 14px;
+      font-family: var(--serif);
+      font-size: clamp(46px, 5vw, 76px);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    .section-title p,
+    .contact-content p {
+      margin-top: 16px;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .divider-line {
+      height: 1px;
+      flex: 1;
+      min-width: 140px;
+      background: linear-gradient(90deg, transparent, rgba(243, 215, 139, 0.36));
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+    }
+
+    .about-main {
+      padding: 34px;
+      border-radius: 34px;
+    }
+
+    .about-main p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(243, 215, 139, 0.15);
+      background: rgba(255, 255, 255, 0.055);
+      text-align: center;
+    }
+
+    .stat .number {
+      font-family: var(--serif);
+      font-size: 39px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .stat .label {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .signature {
+      margin-top: 24px;
+      font-family: var(--serif);
+      font-size: 35px;
+      color: var(--pale-gold);
+    }
+
+    .about-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .mini-card {
+      padding: 24px;
+      border-radius: 24px;
+    }
+
+    .mini-card h3,
+    .skill-category h3 {
+      font-family: var(--serif);
+      font-size: 31px;
+      color: var(--pale-gold);
+      margin-bottom: 8px;
+    }
+
+    .mini-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .achievement-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      transition: 0.35s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(243, 215, 139, 0.5);
+      box-shadow: 0 38px 110px rgba(0, 0, 0, 0.58), 0 0 50px rgba(243, 215, 139, 0.14);
+    }
+
+    .achievement-image-wrap {
+      position: relative;
+      height: 235px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(243, 215, 139, 0.18);
+      background:
+        radial-gradient(circle at 30% 20%, rgba(243, 215, 139, 0.28), transparent 26%),
+        linear-gradient(145deg, rgba(143, 29, 69, 0.55), rgba(42, 16, 45, 0.94));
+    }
+
+    .achievement-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.96;
+      transition: 0.4s ease;
+    }
+
+    .achievement-card:hover .achievement-image {
+      transform: scale(1.07);
+    }
+
+    .achievement-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(243, 215, 139, 0.26);
+      background: rgba(7, 5, 8, 0.55);
+      backdrop-filter: blur(12px);
+      color: var(--pale-gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .achievement-content {
+      padding: 24px;
+    }
+
+    .achievement-kicker {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .achievement-content h3 {
+      font-family: var(--serif);
+      font-size: 34px;
+      line-height: 1.05;
+      color: var(--pale-gold);
+    }
+
+    .achievement-result {
+      color: var(--rose);
+      font-weight: 800;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+
+    .achievement-content p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .achievement-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .tag,
+    .skill-item {
+      border-radius: 999px;
+      border: 1px solid rgba(243, 215, 139, 0.18);
+      background: rgba(255, 255, 255, 0.055);
+      color: var(--pale-gold);
+      font-weight: 800;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .skill-category {
+      padding: 26px;
+      border-radius: 34px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+      transition: 0.25s ease;
+    }
+
+    .skill-item::before {
+      content: "✦";
+      color: var(--gold);
+      font-size: 12px;
+    }
+
+    .skill-item:hover {
+      color: var(--cream);
+      transform: translateY(-3px);
+      background: rgba(243, 215, 139, 0.09);
+    }
+
+    .contact-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+      border-radius: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .contact-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(243, 215, 139, 0.22), transparent 26%),
+        radial-gradient(circle at 88% 70%, rgba(143, 29, 69, 0.34), transparent 34%);
+      pointer-events: none;
+    }
+
+    .contact-content,
+    .contact-details {
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 13px;
+    }
+
+    .contact-item {
+      padding: 16px 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(243, 215, 139, 0.18);
+      background: rgba(7, 5, 8, 0.36);
+    }
+
+    .contact-item .label {
+      display: block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 5px;
+    }
+
+    .contact-item .value {
+      color: var(--cream);
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    footer {
+      padding: 34px 0 48px;
+      color: var(--soft);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .about-grid,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 72px;
+      }
+
+      .profile-stage {
+        min-height: 500px;
+      }
+
+      .achievements-grid,
+      .skills-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container,
+      .nav-inner {
+        width: min(100% - 30px, 1160px);
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 15px;
+        right: 15px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+        border-radius: 24px;
+        background: rgba(13, 8, 14, 0.96);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        text-align: center;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .divider-line {
+        margin-top: 22px;
+      }
+
+      .achievements-grid,
+      .skills-container,
+      .about-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-stage {
+        min-height: 410px;
+      }
+
+      .profile-frame {
+        width: min(335px, 92vw);
+      }
+
+      .gem-1 {
+        right: -4px;
+      }
+
+      .gem-2 {
+        left: -4px;
+      }
+
+      .contact-panel,
+      .about-main {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">◆</span>
+        <span>Syakira Reynamahira</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero container" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="sparkle">✦</span> A little sparkle, a lot of ambition</span>
+
+        <h1>
+          Hi, I’m
+          <span>Syakira Reynamahira</span>
+        </h1>
+
+        <p class="subtitle">
+          Student • Research Enthusiast • MUN Delegate • Creative Achiever
+        </p>
+
+        <p class="hero-description">
+        Through this portfolio, I want to share the achievements, competitions, and experiences that have shaped my journey.
+        </p>
+
+        <div class="hero-note">
+          <span class="note-pill">Model United Nations</span>
+          <span class="note-pill">Research & Innovation</span>
+          <span class="note-pill">Science & Mathematics</span>
+        </div>
+      </div>
+
+      <div class="profile-stage">
+        <div class="floating-gem gem-1">⊛</div>
+        <div class="floating-gem gem-2">✧</div>
+        <div class="floating-gem gem-3">Portfolio</div>
+
+        <div class="profile-frame">
+          <img src="profile.jpg" alt="Syakira Reynamahira profile photo" class="profile-photo">
+
+          <div class="profile-label">
+            <h3>Reyna</h3>
+            <p>Chasing dreams with grace, grit, and a little glitter.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-title">
+            <span class="eyebrow"><span class="sparkle">✦</span> About Me</span>
+            <h2>The Story Behind My Sparkle</h2>
+            <p>A glimpse into who I am, what I love, and the journey I am building one challenge at a time.</p>
+          </div>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main lux-card">
+            <p>Hi, I am Syakira Reynamahira, but you can call me Reyna. I am 15 years old and I am a curious, ambitious student who loves learning through competitions, research, and creative projects.</p>
+            <p>My journey is shaped by different experiences, from Model United Nations and science olympiads to research competitions, mathematics, innovation, and international opportunities. I enjoy challenging myself in many fields because every competition teaches me something new.</p>
+            <p>This portfolio is a collection of my achievements, growth, and dreams. It represents my dedication to keep learning, improving, and turning every challenge into something meaningful, memorable, and golden.</p>
+
+            <div class="about-stats">
+              <div class="stat">
+                <div class="number" id="achievementCount">0</div>
+                <div class="label">Achievements</div>
+              </div>
+
+              <div class="stat">
+                <div class="number">10</div>
+                <div class="label">Years Learning</div>
+              </div>
+
+              <div class="stat">
+                <div class="number">∞</div>
+                <div class="label">Curiosity</div>
+              </div>
+            </div>
+
+            <div class="signature">Syakira Reynamahira</div>
+          </div>
+
+          <div class="about-side">
+            <div class="mini-card lux-card">
+              <h3>My Focus</h3>
+              <p>I focus on competitions, research, public speaking, science, mathematics, and creative problem-solving. I enjoy exploring different fields and turning my curiosity into real achievements.</p>
+            </div>
+
+            <div class="mini-card lux-card">
+              <h3>My Sparkle</h3>
+              <p>I value elegance, confidence, and meaningful presentation. Whether it is a competition, project, or portfolio, I like making my work feel polished, thoughtful, and memorable.</p>
+            </div>
+
+            <div class="mini-card lux-card">
+              <h3>My Goal</h3>
+              <p>My goal is to keep growing through every opportunity, from MUN and research to science competitions and international experiences, while becoming a better version of myself.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-title">
+            <span class="eyebrow"><span class="sparkle">✦</span> My Projects & Achievements</span>
+            <h2>Achievements That Shaped My Journey</h2>
+            <p>From Model United Nations and research competitions to science, mathematics, and innovation, these achievements represent my growth, effort, and courage to keep trying new challenges.</p>
+          </div>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="achievements-grid" id="achievementsGrid">
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-1.jpg" alt="Asia Youth International Model United Nations 18th" class="achievement-image">
+              <span class="achievement-badge">29 Aug–1 Sept 2025</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">International • WHO Junior Council</p>
+              <h3>Asia Youth International Model United Nations 18th</h3>
+              <p class="achievement-result">Honorable Mention</p>
+              <p>Represented the WHO Junior Council at AYIMUN 18th in Kuala Lumpur and received Honorable Mention, strengthening my public speaking, diplomacy, and global issue analysis.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">MUN</span>
+                <span class="tag">WHO</span>
+                <span class="tag">International</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-2.jpg" alt="Kompetisi Riset dan Inovasi Siswa Indonesia (KREASI) 2025" class="achievement-image">
+              <span class="achievement-badge">2025</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • MSTL</p>
+              <h3>Kompetisi Riset dan Inovasi Siswa Indonesia (KREASI) 2025</h3>
+              <p class="achievement-result">Gold Medal &amp; Best Presenter</p>
+              <p>Achieved Gold Medal in research and Best Presenter in KREASI 2025, and became eligible to join ASPC in Thailand.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Research</span>
+                <span class="tag">Gold Medal</span>
+                <span class="tag">Best Presenter</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-3.jpg" alt="Kids Hackathon 2025" class="achievement-image">
+              <span class="achievement-badge">2025</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • AI &amp; Robotic Competition</p>
+              <h3>Kids Hackathon 2025</h3>
+              <p class="achievement-result">Finalist</p>
+              <p>Advanced to the Grand Final stage of Kids Hackathon 2025 at Universitas Prasetiya Mulya after passing the online selection stage.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Finalist</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-4.jpg" alt="Nizamia Model United Nations" class="achievement-image">
+              <span class="achievement-badge">2025</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • WHO Council</p>
+              <h3>Nizamia Model United Nations</h3>
+              <p class="achievement-result">Verbal Commendation</p>
+              <p>Received Verbal Commendation in the WHO Council, showing my growth in debate, diplomacy, health policy, and structured argumentation.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">MUN</span>
+                <span class="tag">WHO</span>
+                <span class="tag">Award</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-5.jpg" alt="Global Millennial Model United Nations Jogjakarta" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • WHO Council</p>
+              <h3>Global Millennial Model United Nations Jogjakarta</h3>
+              <p class="achievement-result">Best Position Paper</p>
+              <p>Earned Best Position Paper in the WHO Council by presenting a strong, well-researched written policy position.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">MUN</span>
+                <span class="tag">Writing</span>
+                <span class="tag">Policy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-6.jpg" alt="Global Islamic School 2 Model United Nations" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • ILO Council</p>
+              <h3>Global Islamic School 2 Model United Nations</h3>
+              <p class="achievement-result">Best Delegate</p>
+              <p>Won Best Delegate in the ILO Council, reflecting strong public speaking, negotiation, leadership, and research preparation.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">MUN</span>
+                <span class="tag">Best Delegate</span>
+                <span class="tag">ILO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-7.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • City Selection</p>
+              <h3>KOSSMI Biology Level 4</h3>
+              <p class="achievement-result">Advanced to Provincial Round</p>
+              <p>Passed the city-level selection in Biology Level 4 and advanced to the provincial round of KOSSMI.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Science</span>
+                <span class="tag">Biology</span>
+                <span class="tag">KOSSMI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-8.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • City Selection</p>
+              <h3>KOSSMI Chemistry Level 4</h3>
+              <p class="achievement-result">Advanced to Provincial Round</p>
+              <p>Passed the city-level selection in Chemistry Level 4 and advanced to the provincial round of KOSSMI.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Science</span>
+                <span class="tag">Chemistry</span>
+                <span class="tag">KOSSMI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-9.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • Provincial Selection</p>
+              <h3>KOSSMI Biology Level 4</h3>
+              <p class="achievement-result">Advanced to National Round</p>
+              <p>Advanced from the provincial round to the national stage in Biology Level 4, competing among selected participants.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Biology</span>
+                <span class="tag">National Round</span>
+                <span class="tag">Science</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-10.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • Provincial Selection</p>
+              <h3>KOSSMI Chemistry Level 4</h3>
+              <p class="achievement-result">Advanced to National Round</p>
+              <p>Advanced from the provincial round to the national stage in Chemistry Level 4, continuing my science competition journey.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Chemistry</span>
+                <span class="tag">National Round</span>
+                <span class="tag">Science</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-11.jpg" alt="Olimpiade Penelitian Siswa Indonesia (OPSI) 2026" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • Applied Physics &amp; Engineering</p>
+              <h3>Olimpiade Penelitian Siswa Indonesia (OPSI) 2026</h3>
+              <p class="achievement-result">Passed Stage 1 Selection</p>
+              <p>Passed the first selection stage of OPSI 2026 in Applied Physics and Engineering, developing a research project with real-world impact.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Research</span>
+                <span class="tag">Engineering</span>
+                <span class="tag">OPSI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-12.jpg" alt="STEMCO Math Competition" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • Secondary Middle</p>
+              <h3>STEMCO Math Competition</h3>
+              <p class="achievement-result">Gold Medal</p>
+              <p>Won a Gold Medal in the National Round and became eligible to join the Global Round in Singapore.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Math</span>
+                <span class="tag">Gold Medal</span>
+                <span class="tag">Global Qualifier</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-13.jpg" alt="Labschool Jakarta Model United Nations" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • UNHRC Council</p>
+              <h3>Labschool Jakarta Model United Nations</h3>
+              <p class="achievement-result">Verbal Commendation</p>
+              <p>Received Verbal Commendation in the UNHRC Council, strengthening my confidence in human rights debate and international relations.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">MUN</span>
+                <span class="tag">UNHRC</span>
+                <span class="tag">Award</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-14.jpg" alt="KOSSMI Biology Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • National Final</p>
+              <h3>KOSSMI Biology Level 4</h3>
+              <p class="achievement-result">Finalist</p>
+              <p>Reached the national final stage in Biology Level 4, competing among selected finalists from across Indonesia.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Biology</span>
+                <span class="tag">Finalist</span>
+                <span class="tag">National</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-15.jpg" alt="KOSSMI Chemistry Level 4" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">National • National Final</p>
+              <h3>KOSSMI Chemistry Level 4</h3>
+              <p class="achievement-result">Bronze Medal</p>
+              <p>Won a Bronze Medal in the KOSSMI Chemistry Level 4 National Final, representing my persistence in science learning.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Chemistry</span>
+                <span class="tag">Bronze Medal</span>
+                <span class="tag">National</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-16.jpg" alt="STEMCO Math Competition Global Round" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">International • NUS Singapore</p>
+              <h3>STEMCO Math Competition Global Round</h3>
+              <p class="achievement-result">Global Round Qualifier</p>
+              <p>Qualified for the STEMCO Math Competition Global Round at the National University of Singapore.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Math</span>
+                <span class="tag">Singapore</span>
+                <span class="tag">International</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-card lux-card">
+            <div class="achievement-image-wrap">
+              <img src="achievement-17.jpg" alt="ASEAN Students Science Project Competition (ASPC) 2026" class="achievement-image">
+              <span class="achievement-badge">2026</span>
+            </div>
+
+            <div class="achievement-content">
+              <p class="achievement-kicker">International • Applied Science Research</p>
+              <h3>ASEAN Students Science Project Competition (ASPC) 2026</h3>
+              <p class="achievement-result">Eligible Participant</p>
+              <p>Became eligible to join ASPC 2026 at the National Science Museum Thailand through my research achievement.</p>
+
+              <div class="achievement-tags">
+                <span class="tag">Research</span>
+                <span class="tag">Thailand</span>
+                <span class="tag">International</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-title">
+            <span class="eyebrow"><span class="sparkle">✦</span> Skills & Strengths</span>
+            <h2>The Strengths Behind My Journey</h2>
+            <p>These are the abilities and strengths I keep developing through competitions, research, school, and every new opportunity I take.</p>
+          </div>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-category lux-card">
+            <h3>Academic & Research</h3>
+            <div class="skill-list">
+              <span class="skill-item">Research Writing</span>
+              <span class="skill-item">Scientific Thinking</span>
+              <span class="skill-item">Data Analysis</span>
+              <span class="skill-item">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="skill-category lux-card">
+            <h3>Communication</h3>
+            <div class="skill-list">
+              <span class="skill-item">Public Speaking</span>
+              <span class="skill-item">Debate</span>
+              <span class="skill-item">Position Paper Writing</span>
+              <span class="skill-item">Diplomacy</span>
+            </div>
+          </div>
+
+          <div class="skill-category lux-card">
+            <h3>Creative Growth</h3>
+            <div class="skill-list">
+              <span class="skill-item">Presentation Design</span>
+              <span class="skill-item">Creative Thinking</span>
+              <span class="skill-item">Leadership</span>
+              <span class="skill-item">Confidence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-panel lux-card">
+          <div class="contact-content">
+            <span class="eyebrow"><span class="sparkle">✦</span> Contact</span>
+            <h2>Let’s Connect</h2>
+            <p>Here is how people can reach me or learn more about my work, achievements, and learning journey.</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <span class="value">YOUR EMAIL</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="label">Instagram / Social Media</span>
+              <span class="value">YOUR SOCIAL MEDIA USERNAME</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="label">School / Location</span>
+              <span class="value">YOUR SCHOOL OR LOCATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="currentYear">2026</span> Syakira Reynamahira — A polished digital portfolio ✦</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+      });
+    });
+
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    const achievementCount = document.querySelectorAll(".achievement-card").length;
+    document.getElementById("achievementCount").textContent = achievementCount;
+
+    const sections = document.querySelectorAll("section[id], header[id]");
+    const navItems = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "home";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 140;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navItems.forEach((item) => {
+        item.classList.remove("active");
+        if (item.getAttribute("href") === `#${current}`) {
+          item.classList.add("active");
+        }
+      });
+    });
+
+    const revealItems = document.querySelectorAll(".lux-card, .section-title, .hero-copy, .profile-stage");
+
+    const observer = new IntersectionObserver()
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.animate(
+              [
+                { opacity: 0, transform: "translateY(24px)" },
+                { opacity: 1, transform: "translateY(0)" }
+              ],
+              {
+                duration: 750,
+                easing: "cubic-bezier(.2,.8,.2,1)",
+                fill: "forwards"
+              }
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  </script>
+</body>
+</html>
