@@ -840,8 +840,7 @@
         <div class="floating-gem gem-3">Portfolio</div>
 
         <div class="profile-frame">
-          <img src="profile.jpg" alt="Syakira Reynamahira profile photo" class="profile-photo">
-
+          <img src="https://drive.google.com/thumbnail?id=1tWH1IdJGpwtXD140MVlz46EEFx7u-dam&sz=w1000" alt="Syakira Reynamahira profile photo" class="profile-photo">
           <div class="profile-label">
             <h3>Reyna</h3>
             <p>Chasing dreams with grace, grit, and a little glitter.</p>
@@ -1251,17 +1250,17 @@
           <div class="contact-details">
             <div class="contact-item">
               <span class="label">Email</span>
-              <span class="value">YOUR EMAIL</span>
+              <span class="value">persiapanolimpiade@gmail.com</span>
             </div>
 
             <div class="contact-item">
               <span class="label">Instagram / Social Media</span>
-              <span class="value">YOUR SOCIAL MEDIA USERNAME</span>
+              <span class="value">@reynn4_</span>
             </div>
 
             <div class="contact-item">
               <span class="label">School / Location</span>
-              <span class="value">YOUR SCHOOL OR LOCATION</span>
+              <span class="value">SMA Wardaya</span>
             </div>
           </div>
         </div>
